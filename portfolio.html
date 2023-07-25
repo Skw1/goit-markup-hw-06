@@ -42,6 +42,26 @@
             </li>
           </ul>
         </nav>
+        <button
+        class="burger-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+        class="burger"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        </button>
         <address class="address">
           <ul class="list address-list">
             <li>
@@ -353,6 +373,67 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button" data-modal-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#cross-bar"></use>
+        </svg>
+      </button>
+    
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-point"><a class="menu-link link " href="./index.html" >Studio</a></li>
+        <li class="mobile-menu-point"><a class="menu-link link actived" href="./portfolio.html" >Portfolio</a></li>
+        <li class="mobile-menu-point"><a class="menu-link link" href="" >Contacts</a></li>
+      </ul>
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-point">
+          <a
+          class="menu-link-number link"
+            href="tel:+110001111111"
+            target="_blank"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-menu-point">
+          <a
+          class="menu-link-email link"
+            href="mailto:info@devstudio.com"
+            target="_blank"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list list">
+        <li class="icons-traling-point">
+          <a href="" class="footer-traling-icon-link">
+            <svg class="traling-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-traling-point">
+          <a href="" class="footer-traling-icon-link">
+            <svg class="traling-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-traling-point">
+          <a href="" class="footer-traling-icon-link">
+            <svg class="traling-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-traling-point">
+          <a href="" class="footer-traling-icon-link">
+            <svg class="traling-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
