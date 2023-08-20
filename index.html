@@ -63,7 +63,25 @@
             </li>
           </ul>
         </address>
-        
+        <button
+          class="burger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
     </header>
     <!-- Main section -->
     <main class="main">
@@ -561,10 +579,61 @@
       </div>
     </div>
     <!--Mobile menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="close-btn menu-toggle js-close-menu">
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#cross-bar"></use>
+        </svg>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu-point"><a href="index.html" class="current  menu-link">Studio</a></li>
+        <li class="mobile-menu-point"><a href="portfolio.html" class="menu-link">Portfolio</a></li>
+        <li class="mobile-menu-point"><a href="" class="menu-link">Contacts</a></li>
+      </ul>
+      <div class="container-menu-bott">
+      <div class="contacts-menu">
+      <a href="mailto:info@devstudio.com"
+      target="_blank"class="menu-link-number link">+11 (000) 111-11-11</a>
+      <a href="tel:+110001111111"
+      target="_blank" class="menu-link-email link">info@devstudio.com</a>
+    </div>
+      <ul class="list menu-traling-list">
+        <li class="menu-icons-traling-point">
+          <a href="" class="traling-icon-link">
+            <svg class="traling-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-icons-traling-point">
+          <a href="" class="traling-icon-link">
+            <svg class="traling-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-icons-traling-point">
+          <a href="" class="traling-icon-link">
+            <svg class="traling-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-icons-traling-point">
+          <a href="" class="traling-icon-link">
+            <svg class="traling-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
 
-   
-    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    
   </body>
 </html>
  
