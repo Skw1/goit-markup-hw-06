@@ -1158,6 +1158,7 @@
         max-width: 496px;
     }
     .benefits-section{
+        max-width: 1440px;
         padding: 120px 0;
     }
     .benefits-point{
@@ -1298,6 +1299,7 @@
     background-color: #fff;
 }
 .menu-container {
+    margin-top: auto;
     position: fixed;
     top: 0;
     left: 0;
@@ -1309,7 +1311,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    row-gap: calc(100% / 4);
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
