@@ -1162,6 +1162,9 @@
         max-width: 1440px;
         padding: 120px 0;
     }
+    .benefits-list{
+        margin: 0 auto;
+    }
     .benefits-point{
         width: calc((100% - 72px) / 4); 
     }
